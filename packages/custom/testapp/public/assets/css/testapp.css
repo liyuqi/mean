@@ -1,0 +1,53 @@
+.testapp-example span {
+    font-weight: bold;
+}
+:root {
+    --nav-width: 200px;
+    --header-height: 65px;
+}
+#header {
+    display: inline-block;
+    width: 100%;
+    height: var(--header-height);
+    background-color: white;
+    
+    /* > * {
+        float: left;
+        display: inline-block;
+    } */
+    /* .logo {
+        width: var(--nav-width);
+        height: 100%;
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    } */
+}
+
+#main {
+    display: inline-block;
+    left: var(--nav-width);
+    top: var(--header-height);
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.2);
+    /* padding-top: 50px; */
+    border: 1px solid blueviolet;
+}
+
+#menu {
+    position: fixed;
+    left:0;
+    right:0;
+    top:65px;
+    display: inline-block;
+    width: var(--nav-width);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 50;
+    /* padding-top: 50px; */
+    border: 1px solid red;
+}
